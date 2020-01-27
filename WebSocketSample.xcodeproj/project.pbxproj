@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBA3746723DF4BDB00F53F98 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3746623DF4BDB00F53F98 /* WebSocketManager.swift */; };
+		DBA3746923DF4EF100F53F98 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3746823DF4EF100F53F98 /* Observable.swift */; };
 		DBDC6F2D23DF4A5800C92A6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDC6F2C23DF4A5800C92A6C /* ViewController.swift */; };
 		DBDC6F3023DF4A5800C92A6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDC6F2E23DF4A5800C92A6C /* Main.storyboard */; };
 		DBDC6F3223DF4A5A00C92A6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBDC6F3123DF4A5A00C92A6C /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DBA3746623DF4BDB00F53F98 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		DBA3746823DF4EF100F53F98 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		DBDC6F2523DF4A5800C92A6C /* WebSocketSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBDC6F2C23DF4A5800C92A6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBDC6F2F23DF4A5800C92A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DBA3746523DF4BCB00F53F98 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DBDC6F2C23DF4A5800C92A6C /* ViewController.swift */,
+				DBA3746A23DF7BE900F53F98 /* Network */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DBA3746A23DF7BE900F53F98 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DBA3746623DF4BDB00F53F98 /* WebSocketManager.swift */,
+				DBA3746823DF4EF100F53F98 /* Observable.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		DBDC6F1C23DF4A5800C92A6C = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				DBDC6F3C23DF4AB000C92A6C /* App */,
-				DBDC6F2C23DF4A5800C92A6C /* ViewController.swift */,
+				DBA3746523DF4BCB00F53F98 /* UI */,
 				DBDC6F3D23DF4AC600C92A6C /* Supporting Files */,
 			);
 			path = WebSocketSample;
@@ -163,8 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBDC6F4123DF4AF500C92A6C /* AppDelegate.swift in Sources */,
+				DBA3746923DF4EF100F53F98 /* Observable.swift in Sources */,
 				DBDC6F2D23DF4A5800C92A6C /* ViewController.swift in Sources */,
 				DBDC6F4223DF4AF500C92A6C /* SceneDelegate.swift in Sources */,
+				DBA3746723DF4BDB00F53F98 /* WebSocketManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
