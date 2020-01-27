@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DBDC6F2923DF4A5800C92A6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDC6F2823DF4A5800C92A6C /* AppDelegate.swift */; };
-		DBDC6F2B23DF4A5800C92A6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDC6F2A23DF4A5800C92A6C /* SceneDelegate.swift */; };
 		DBDC6F2D23DF4A5800C92A6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDC6F2C23DF4A5800C92A6C /* ViewController.swift */; };
 		DBDC6F3023DF4A5800C92A6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDC6F2E23DF4A5800C92A6C /* Main.storyboard */; };
 		DBDC6F3223DF4A5A00C92A6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBDC6F3123DF4A5A00C92A6C /* Assets.xcassets */; };
 		DBDC6F3523DF4A5A00C92A6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDC6F3323DF4A5A00C92A6C /* LaunchScreen.storyboard */; };
+		DBDC6F4123DF4AF500C92A6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDC6F3F23DF4AF500C92A6C /* AppDelegate.swift */; };
+		DBDC6F4223DF4AF500C92A6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDC6F4023DF4AF500C92A6C /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DBDC6F2523DF4A5800C92A6C /* WebSocketSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBDC6F2823DF4A5800C92A6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBDC6F2A23DF4A5800C92A6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DBDC6F2C23DF4A5800C92A6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBDC6F2F23DF4A5800C92A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBDC6F3123DF4A5A00C92A6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBDC6F3423DF4A5A00C92A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBDC6F3623DF4A5A00C92A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBDC6F3F23DF4AF500C92A6C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBDC6F4023DF4AF500C92A6C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,39 @@
 		DBDC6F2723DF4A5800C92A6C /* WebSocketSample */ = {
 			isa = PBXGroup;
 			children = (
-				DBDC6F2823DF4A5800C92A6C /* AppDelegate.swift */,
-				DBDC6F2A23DF4A5800C92A6C /* SceneDelegate.swift */,
+				DBDC6F3C23DF4AB000C92A6C /* App */,
 				DBDC6F2C23DF4A5800C92A6C /* ViewController.swift */,
-				DBDC6F2E23DF4A5800C92A6C /* Main.storyboard */,
-				DBDC6F3123DF4A5A00C92A6C /* Assets.xcassets */,
-				DBDC6F3323DF4A5A00C92A6C /* LaunchScreen.storyboard */,
-				DBDC6F3623DF4A5A00C92A6C /* Info.plist */,
+				DBDC6F3D23DF4AC600C92A6C /* Supporting Files */,
 			);
 			path = WebSocketSample;
+			sourceTree = "<group>";
+		};
+		DBDC6F3C23DF4AB000C92A6C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DBDC6F3F23DF4AF500C92A6C /* AppDelegate.swift */,
+				DBDC6F4023DF4AF500C92A6C /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DBDC6F3D23DF4AC600C92A6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBDC6F3E23DF4AD500C92A6C /* UI */,
+				DBDC6F3123DF4A5A00C92A6C /* Assets.xcassets */,
+				DBDC6F3623DF4A5A00C92A6C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBDC6F3E23DF4AD500C92A6C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DBDC6F2E23DF4A5800C92A6C /* Main.storyboard */,
+				DBDC6F3323DF4A5A00C92A6C /* LaunchScreen.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBDC6F4123DF4AF500C92A6C /* AppDelegate.swift in Sources */,
 				DBDC6F2D23DF4A5800C92A6C /* ViewController.swift in Sources */,
-				DBDC6F2923DF4A5800C92A6C /* AppDelegate.swift in Sources */,
-				DBDC6F2B23DF4A5800C92A6C /* SceneDelegate.swift in Sources */,
+				DBDC6F4223DF4AF500C92A6C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +309,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WebSocketSample/Info.plist;
+				DEVELOPMENT_TEAM = 9XMT5K89X3;
+				INFOPLIST_FILE = "WebSocketSample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +327,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WebSocketSample/Info.plist;
+				DEVELOPMENT_TEAM = 9XMT5K89X3;
+				INFOPLIST_FILE = "WebSocketSample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
