@@ -45,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				DBDC6F2C23DF4A5800C92A6C /* ViewController.swift */,
-				DBA3746A23DF7BE900F53F98 /* Network */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -80,6 +79,7 @@
 			children = (
 				DBDC6F3C23DF4AB000C92A6C /* App */,
 				DBA3746523DF4BCB00F53F98 /* UI */,
+				DBA3746A23DF7BE900F53F98 /* Network */,
 				DBDC6F3D23DF4AC600C92A6C /* Supporting Files */,
 			);
 			path = WebSocketSample;
